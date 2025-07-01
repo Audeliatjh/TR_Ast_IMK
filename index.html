@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal Kegiatan UKSW</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="img/logo uksw.jpg" alt="Logo" height="50" class="me-2" />
+          <div>
+            <h6 class="mb-0">UNIVERSITAS KRISTEN SATYA WACANA</h6>
+            <small>LAYANAN KEGIATAN</small>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Kegiatan</a></li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Tentang</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Visi &amp; Misi</a></li>
+                <li><a class="dropdown-item" href="#">Struktur</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Informasi</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Berita</a></li>
+                <li><a class="dropdown-item" href="#">Pengumuman</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a class="btn btn-gold me-2" href="#">Masuk</a>
+            <a class="btn btn-gold" href="#">Daftar</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Search Section -->
+    <section class="search-section py-3 sticky-top search-sticky">
+      <div class="container">
+        <form class="d-flex justify-content-center" role="search">
+          <div class="input-group input-group-lg" style="max-width: 600px">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Pencarian..."
+              aria-label="Pencarian kegiatan"
+            />
+            <button
+              class="btn btn-light btn-search"
+              type="submit"
+              aria-label="Filter"
+            >
+              <i class="bi bi-sliders"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Hero Carousel -->
+    <section class="pt-0">
+      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!--
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/image3.png" class="d-block w-100" alt="Banner 1" />
+          </div>
+          <div class="carousel-item">
+            <img src="/img/image.png" class="d-block w-100" alt="Banner 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="/img/image2.png" class="d-block w-100" alt="Banner 3" />
+          </div>
+        </div>
+        <!--
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      --></div>
+    </section>
+
+    <!-- Kegiatan Terkini -->
+    <section class="py-5">
+      <div class="container">
+        <h3 class="mb-4 text-center">Kegiatan UKSW Terdekat</h3>
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card card-event h-100">
+              <div class="ratio ratio-16x9">
+                <img
+                  src="/img/cardimg1.png"
+                  class="w-100 h-100"
+                  style="object-fit: cover"
+                  alt="Pesta Budaya UKSW 2025"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="fw-semibold mb-1">Pesta Budaya UKSW 2025</h5>
+                <p
+                  class="small text-body-secondary d-flex align-items-start mb-2"
+                >
+                  <i class="bi bi-geo-alt-fill me-1"></i>Lapangan Bola —
+                  Universitas Kristen Satya Wacana
+                </p>
+                <div class="meta small d-grid gap-1">
+                  <span class="d-flex align-items-center"
+                    ><i class="bi bi-calendar-event me-1"></i>24-26 Juni
+                    2025</span
+                  >
+                  <span class="d-flex align-items-center"
+                    ><i class="bi bi-ticket-perforated me-1"></i>GRATIS</span
+                  >
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0 text-end">
+                <button class="btn btn-brown btn-sm px-4">Lihat Detail</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card card-event h-100 position-relative">
+              <div class="ratio ratio-16x9">
+                <img
+                  src="/img/cardimg2.png"
+                  class="w-100 h-100"
+                  style="object-fit: cover"
+                  alt="POM 2025"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="fw-semibold mb-1">
+                  Pekan Olahraga Mahasiswa (POM) 2025
+                </h5>
+                <p
+                  class="small text-body-secondary d-flex align-items-start mb-2"
+                >
+                  <i class="bi bi-geo-alt-fill me-1"></i>Universitas Kristen
+                  Satya Wacana
+                </p>
+                <div class="meta small d-grid gap-1">
+                  <span class="d-flex align-items-center"
+                    ><i class="bi bi-calendar-event me-1"></i>3-20 Juni
+                    2025</span
+                  >
+                  <span class="d-flex align-items-center"
+                    ><i class="bi bi-ticket-perforated me-1"></i>GRATIS</span
+                  >
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0 text-end">
+                <button class="btn btn-brown btn-sm px-4">Lihat Detail</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card card-event h-100">
+              <div class="ratio ratio-16x9">
+                <img
+                  src="/img/cardimg3.png"
+                  class="w-100 h-100"
+                  style="object-fit: cover"
+                  alt="FIT Competition 2025"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="fw-semibold mb-1 text-truncate">
+                  Faculty of Information Technology Competition 2025
+                </h5>
+                <p
+                  class="small text-body-secondary d-flex align-items-start mb-2"
+                >
+                  <i class="bi bi-geo-alt-fill me-1"></i>Fakultas Teknologi
+                  Informasi UKSW
+                </p>
+                <div class="meta small d-grid gap-1">
+                  <span class="d-flex align-items-center"
+                    ><i class="bi bi-calendar-event me-1"></i>21 April - 21 Juni
+                    2025</span
+                  >
+                  <span class="d-flex align-items-center"
+                    ><i class="bi bi-ticket-perforated me-1"></i>GRATIS</span
+                  >
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0 text-end">
+                <button class="btn btn-brown btn-sm px-4">Lihat Detail</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card card-event h-100">
+              <div class="ratio ratio-16x9">
+                <img
+                  src="/img/cardimg4.jpg"
+                  class="w-100 h-100"
+                  style="object-fit: cover"
+                  alt="FIT Competition 2025"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="fw-semibold mb-1 text-truncate">Maid Cafe</h5>
+                <p
+                  class="small text-body-secondary d-flex align-items-start mb-2"
+                >
+                  <i class="bi bi-geo-alt-fill me-1"></i>FBS Kartini
+                </p>
+                <div class="meta small d-grid gap-1">
+                  <span class="d-flex align-items-center"
+                    ><i class="bi bi-calendar-event me-1"></i>5 Mei 2025</span
+                  >
+                  <span class="d-flex align-items-center"
+                    ><i class="bi bi-ticket-perforated me-1"></i>GRATIS</span
+                  >
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0 text-end">
+                <button class="btn btn-brown btn-sm px-4">Lihat Detail</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card card-event h-100">
+              <div class="ratio ratio-16x9">
+                <img
+                  src="/img/cardimg5.jpg"
+                  class="w-100 h-100"
+                  style="object-fit: cover"
+                  alt="FIT Competition 2025"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="fw-semibold mb-1 text-truncate">
+                  Sekolah Pasar : Model Level 1
+                </h5>
+                <p
+                  class="small text-body-secondary d-flex align-items-start mb-2"
+                >
+                  <i class="bi bi-geo-alt-fill me-1"></i>Gedung E126 UKSW
+                </p>
+                <div class="meta small d-grid gap-1">
+                  <span class="d-flex align-items-center"
+                    ><i class="bi bi-calendar-event me-1"></i>5 Juli 2025</span
+                  >
+                  <span class="d-flex align-items-center"
+                    ><i class="bi bi-ticket-perforated me-1"></i>GRATIS</span
+                  >
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0 text-end">
+                <a href="sekolahpasar.html" class="btn btn-brown btn-sm px-4"
+                  >Lihat Detail</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card card-event h-100">
+              <div class="ratio ratio-16x9">
+                <img
+                  src="/img/cardimg6.jpg"
+                  class="w-100 h-100"
+                  style="object-fit: cover"
+                  alt="FIT Competition 2025"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="fw-semibold mb-1 text-truncate">
+                  FLAWAMP Faculty of Language and Art
+                </h5>
+                <p
+                  class="small text-body-secondary d-flex align-items-start mb-2"
+                >
+                  <i class="bi bi-geo-alt-fill me-1"></i>Online meeting
+                </p>
+                <div class="meta small d-grid gap-1">
+                  <span class="d-flex align-items-center"
+                    ><i class="bi bi-calendar-event me-1"></i>28 April - 08 Mei
+                    2025</span
+                  >
+                  <span class="d-flex align-items-center"
+                    ><i class="bi bi-ticket-perforated me-1"></i>GRATIS</span
+                  >
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0 text-end">
+                <button class="btn btn-brown btn-sm px-4">Lihat Detail</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sorotan Kegiatan -->
+    <section class="py-5">
+      <div class="container">
+        <h3 class="text-center fw-bold mb-3 fs-1">Sorotan Kegiatan</h3>
+        <div class="row g-4 justify-content-center align-items-center">
+          <!-- Kolom carousel -->
+          <div class="col-lg-6">
+            <div
+              id="highlightCarousel"
+              class="carousel slide square-carousel"
+              data-bs-ride="carousel"
+              data-bs-interval="3000"
+              data-bs-pause="false"
+              data-bs-touch="false"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="/img/sqcarousel1.heic"
+                    class="d-block w-100"
+                    alt="Highlight 1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/img/sqcarousel2.heic"
+                    class="d-block w-100"
+                    alt="Highlight 2"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Kolom teks -->
+          <div class="col-lg-5">
+            <h2 class="fw-bold mb-3 fs-1">Pesta Budaya UKSW 2024</h2>
+            <p class="fs-5 lh-lg mb-0">
+              Tiap langkah di tanah airku adalah jejak budaya yang menghadirkan
+              keindahan dan kearifan lokal yang tak ternilai.<br />
+              "I am Indonesia. With a spirit for telling stories that captivate
+              and inspire."<br />
+              Culture isn’t just the past, it’s you, it’s us, growing together
+              !!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ulasan Kegiatan -->
+    <section class="py-5">
+      <div class="container">
+        <h3 class="text-center fw-bold mb-4">Ulasan Kegiatan</h3>
+        <div class="d-flex gap-3 overflow-auto snap-x no-scrollbar">
+          <div
+            class="border rounded-4 p-4 flex-shrink-0 snap-start"
+            style="width: 280px"
+          >
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-person-circle fs-1 me-2"></i>
+              <div>
+                <h6 class="fw-bold mb-0">Audelia</h6>
+                <small class="text-muted">23/6/2024</small>
+              </div>
+            </div>
+            <p class="mb-0">UKSW keren, acaranya sangat menarik ❤️</p>
+          </div>
+
+          <div
+            class="border rounded-4 p-4 flex-shrink-0 snap-start"
+            style="width: 280px"
+          >
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-person-circle fs-1 me-2"></i>
+              <div>
+                <h6 class="fw-bold mb-0">Fahzya Ubung</h6>
+                <small class="text-muted">26/6/2024</small>
+              </div>
+            </div>
+            <p class="mb-0">Bisa lebih tau budaya‑budaya di Indonesia 😁😁</p>
+          </div>
+
+          <div
+            class="border rounded-4 p-4 flex-shrink-0 snap-start"
+            style="width: 280px"
+          >
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-person-circle fs-1 me-2"></i>
+              <div>
+                <h6 class="fw-bold mb-0">Sheila Agustina</h6>
+                <small class="text-muted">27/6/2024</small>
+              </div>
+            </div>
+            <p class="mb-0">
+              Woww!! bisa tambah relasi &amp; ketemu orang‑orang baru 😎
+            </p>
+          </div>
+
+          <!-- Duplikasi review bisa dihapus jika mau unik, di bawah ini memang copy -->
+          <div
+            class="border rounded-4 p-4 flex-shrink-0 snap-start"
+            style="width: 280px"
+          >
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-person-circle fs-1 me-2"></i>
+              <div>
+                <h6 class="fw-bold mb-0">Sheila Agustina</h6>
+                <small class="text-muted">27/6/2024</small>
+              </div>
+            </div>
+            <p class="mb-0">
+              Woww!! bisa tambah relasi &amp; ketemu orang‑orang baru 😎
+            </p>
+          </div>
+
+          <div
+            class="border rounded-4 p-4 flex-shrink-0 snap-start"
+            style="width: 280px"
+          >
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-person-circle fs-1 me-2"></i>
+              <div>
+                <h6 class="fw-bold mb-0">Sheila Agustina</h6>
+                <small class="text-muted">27/6/2024</small>
+              </div>
+            </div>
+            <p class="mb-0">
+              Woww!! bisa tambah relasi &amp; ketemu orang‑orang baru 😎
+            </p>
+          </div>
+
+          <div
+            class="border rounded-4 p-4 flex-shrink-0 snap-start"
+            style="width: 280px"
+          >
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-person-circle fs-1 me-2"></i>
+              <div>
+                <h6 class="fw-bold mb-0">Sheila Agustina</h6>
+                <small class="text-muted">27/6/2024</small>
+              </div>
+            </div>
+            <p class="mb-0">
+              Woww!! bisa tambah relasi &amp; ketemu orang‑orang baru 😎
+            </p>
+          </div>
+
+          <div
+            class="border rounded-4 p-4 flex-shrink-0 snap-start"
+            style="width: 280px"
+          >
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-person-circle fs-1 me-2"></i>
+              <div>
+                <h6 class="fw-bold mb-0">Sheila Agustina</h6>
+                <small class="text-muted">27/6/2024</small>
+              </div>
+            </div>
+            <p class="mb-0">
+              Woww!! bisa tambah relasi &amp; ketemu orang‑orang baru 😎
+            </p>
+          </div>
+
+          <div
+            class="border rounded-4 p-4 flex-shrink-0 snap-start"
+            style="width: 280px"
+          >
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-person-circle fs-1 me-2"></i>
+              <div>
+                <h6 class="fw-bold mb-0">Sheila Agustina</h6>
+                <small class="text-muted">27/6/2024</small>
+              </div>
+            </div>
+            <p class="mb-0">
+              Woww!! bisa tambah relasi &amp; ketemu orang‑orang baru 😎
+            </p>
+          </div>
+
+          <div
+            class="border rounded-4 p-4 flex-shrink-0 snap-start"
+            style="width: 280px"
+          >
+            <div class="d-flex align-items-center mb-2">
+              <i class="bi bi-person-circle fs-1 me-2"></i>
+              <div>
+                <h6 class="fw-bold mb-0">Sheila Agustina</h6>
+                <small class="text-muted">27/6/2024</small>
+              </div>
+            </div>
+            <p class="mb-0">
+              Woww!! bisa tambah relasi &amp; ketemu orang‑orang baru 😎
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="footer py-0"
+      style="background: #faf6ec; font-family: 'Poppins', Arial, sans-serif"
+    >
+      <div class="container pt-4 pb-0">
+        <div class="row align-items-start">
+          <!-- Kiri: Logo dan info -->
+          <div class="col-lg-5 mb-3">
+            <div class="d-flex align-items-start">
+              <img
+                src="/img/logo uksw.jpg"
+                alt="Logo Satya Wacana"
+                style="height: 65px"
+                class="me-3 mt-1"
+              />
+              <div>
+                <div
+                  class="fw-bold"
+                  style="font-size: 1.08rem; line-height: 1.25"
+                >
+                  UNIVERSITAS KRISTEN<br />
+                  <span style="font-weight: 800; letter-spacing: 0.5px"
+                    >SATYA WACANA</span
+                  ><br />
+                  <span class="fw-bold">LAYANAN KEGIATAN</span>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3 mb-2" style="font-size: 0.97rem">
+              Jalan Diponegoro No. 52 – 60, Kel. Salatiga, Kec. Sidorejo, Kota
+              Salatiga,<br />Prov. Jawa Tengah
+            </div>
+            <div
+              class="fw-bold"
+              style="font-size: 1rem; letter-spacing: 0.01rem"
+            >
+              layananpkmu@uksw.edu<br />
+              yptksw@uksw.edu
+            </div>
+          </div>
+          <!-- Kanan: Navigasi -->
+          <div class="col-lg-7">
+            <div class="row text-start">
+              <div class="col-4 mb-2">
+                <div class="fw-bold mb-2">Informasi</div>
+                <div class="fw-bold mb-2">Tentang</div>
+                <div class="fw-bold">Kegiatan</div>
+              </div>
+              <div class="col-4 mb-2">
+                <div class="fw-bold mb-2">Pendaftaran</div>
+                <div class="fw-bold mb-2">Keilmuan</div>
+                <div class="fw-bold">Seminar</div>
+              </div>
+              <div class="col-4 mb-2">
+                <div class="fw-bold">Olahraga</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FOOTER BAWAH -->
+        <hr
+          style="
+            border: 0;
+            border-top: 3px solid #ba873a;
+            margin-top: 18px;
+            margin-bottom: 6px;
+          "
+        />
+        <div class="ps-1" style="font-size: 1rem; margin-bottom: 6px">
+          <b>(0298) 321212</b> (UKSW) | <b>(0298) 311880</b> (YPTKSW)
+        </div>
+        <hr
+          style="
+            border: 0;
+            border-top: 3px solid #ba873a;
+            margin-top: 0;
+            margin-bottom: 18px;
+          "
+        />
+        <div class="row align-items-end">
+          <div class="col-12 col-md-6 mb-2">
+            <div
+              class="d-flex align-items-center ps-1"
+              style="gap: 14px; font-size: 1.35rem"
+            >
+              <a href="#" class="text-dark" aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="text-dark" aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="text-dark" aria-label="YouTube"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 text-md-end small"
+            style="font-size: 1rem"
+          >
+            Copyright © 2025 Universitas Kristen Satya Wacana<br />
+            Yayasan PERGURUAN TINGGI KRISTEN SATYA WACANA (YPTK SATYA WACANA)
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

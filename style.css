@@ -1,0 +1,215 @@
+:root {
+  --golden-brown: #ba873a;
+  --bs-brown: var(--golden-brown);
+  --footer-bg: #faf7ed;
+}
+
+/* ========== Search Bar ========== */
+.search-section {
+  background: var(--golden-brown);
+}
+.search-section .form-control {
+  padding-left: 1.25rem;
+  border: none;
+  border-radius: 2rem 0 0 2rem;
+}
+.search-section .btn-search {
+  border-radius: 0 2rem 2rem 0;
+}
+
+/* Sticky search (di bawah navbar) */
+.search-sticky {
+  position: sticky;
+  top: 70px;
+  z-index: 1010;
+}
+
+/* Responsif */
+@media (max-width: 576px) {
+  .search-sticky {
+    top: 58px;
+  }
+  .search-section .input-group-lg > .form-control,
+  .search-section .input-group-lg > .btn {
+    font-size: 1rem;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* ========== Kartu Kegiatan ========== */
+.card-event {
+  border: 1px solid #e4e4e4;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s;
+}
+.card-event:hover {
+  transform: translateY(-4px);
+}
+.meta i {
+  color: var(--bs-brown);
+  width: 1.25rem;
+}
+
+.menu-link {
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.07rem;
+  margin: 0 150px;
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: #d39e32;
+}
+
+.btn-gold {
+  background-color: var(--golden-brown);
+  color: #fff;
+  border: none;
+  border-radius: 1.25rem;
+  padding: 0.6rem 2rem;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.btn-gold:hover,
+.btn-gold:focus {
+  background-color: #e5c189;
+  color: #fff;
+}
+
+.btn-outline-gold {
+  background: #fff;
+  color: var(--golden-brown);
+  border: 2px solid var(--golden-brown);
+  border-radius: 1.25rem;
+  padding: 0.6rem 2rem;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-outline-gold:hover,
+.btn-outline-gold:focus {
+  background: var(--golden-brown);
+  color: #fff;
+}
+
+/* Tombol lihat detail */
+.btn-brown {
+  background: var(--bs-brown);
+  border-color: var(--bs-brown);
+  color: #fff;
+  transition: background-color 0.25s ease;
+}
+.btn-brown:hover,
+.btn-brown:focus {
+  background: #a17032;
+  border-color: #a17032;
+}
+.card-event {
+  border: 1px solid #e4e4e4;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s;
+}
+.card-event:hover {
+  transform: translateY(-4px);
+}
+.meta i {
+  color: var(--bs-brown);
+  width: 1.25rem;
+}
+
+@media (max-width: 576px) {
+  .search-sticky {
+    top: 58px !important;
+  }
+  .search-section .input-group-lg > .form-control,
+  .search-section .input-group-lg > .btn {
+    font-size: 1rem;
+  }
+}
+
+.square-carousel {
+  max-width: 520px;
+  aspect-ratio: 1 / 1;
+  border: 4px solid #c1121f;
+  border-radius: 20px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.square-carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review-card {
+  flex: 0 0 280px;
+  border: 1px solid #e7e7e7;
+  border-radius: 16px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  background: #fff;
+  padding: 1.5rem;
+  scroll-snap-align: start;
+  user-select: none;
+}
+
+/* ====== Rel / track ======*/
+.reviews-track {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  cursor: grab;
+}
+.reviews-track:active {
+  cursor: grabbing;
+}
+
+.reviews-track::-webkit-scrollbar {
+  display: none;
+}
+.reviews-track {
+  scrollbar-width: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+.footer {
+  background-color: #faf6ec;
+  font-family: "Poppins", sans-serif;
+}
+.footer-link {
+  color: #000;
+  text-decoration: none;
+}
+
+/* =======================
+   Garis emas selebar container
+   ======================= */
+.full-hr {
+  border: 0;
+  border-top: 1px solid #c8a25a;
+  /* Ngelebarin: 100% kolom + 1 gutter */
+  width: calc(100% + var(--bs-gutter-x));
+  /* Ngegeser setengah gutter ke kiri ama kanan */
+  margin: 1.5rem calc(-0.5 * var(--bs-gutter-x));
+  opacity: 1;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+.border-golden {
+  border-color: #c8a25a !important;
+}
